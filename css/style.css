@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;0,900;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  width: 450px;               /* Narrower like most tutorials */
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f3542;
+}
+
+.balance {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.balance h4 {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.balance h1 {
+  font-size: 2.8rem;
+  color: #2f3542;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.inc, .exp {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.inc {
+  border-right: 1px solid #dedede;
+  color: #27ae60;
+}
+
+.exp {
+  color: #e74c3c;
+}
+
+.inc h4, .exp h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.amt {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+form {
+  margin: 30px 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #2f3542;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #219653;
+}
+
+.list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.list li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.list li.minus {
+  border-right: 5px solid #e74c3c;
+}
+
+.list li.plus {
+  border-right: 5px solid #27ae60;
+}
+
+.list li button {
+  position: absolute;
+  left: -30px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.list li:hover button {
+  opacity: 1;
+}
